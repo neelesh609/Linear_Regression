@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CIFAR-10 Classifier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div  id="wrapper" class="divided" style="z-index: 0;">
+			
+				<!-- One -->
+					<div style="z-index: 1;" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					
+						<div  class="content" style="float: left;">
+							
+							
+							<h1>Overfitting Using Higher Order Linear Regression.</h1>
+							<p class="major"> <a href=""></a><br/><br/>
+
+								</p>
+								
+								<br>
+							<ul class="actions stacked">
+								<p>Please click below to refer the full code.</p>
+								<a href="https://colab.research.google.com/drive/1EdI7KC0JFVj5pKFTj4sehXtM7AgwTH00#scrollTo=dYpW5KxkpAEM"> <button type="button">Open Colab</button></a><br/>
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						
+					</div>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Generate 20 data pairs (X, Y) using y = sin(2*pi*X) + 0.1 * N 
+</h2>
+
+<p>Use uniform distribution between 0 and 1 for X<br/>
+Sample N from the normal gaussian distribution <br/>
+Use 10 for train and 10 for test </p>
+
+					
+								<img src="images/20_random.PNG" alt="" /> <br/><br/><br/>
+
+								
+								
+
+								<img src="images/20_random2.PNG" alt="" />
+							</ul>
+						</div>
+</section>
+
+						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+								<div class="content">
+								<h2>Using root mean square error, find weights of polynomial regression for order is 0, 1, 3, 9
+								</h2>	
+								
+								<ul class="actions stacked">
+									<h2>For Order = 0</h2>
+
+									<img  src="images/order0_code.PNG" alt="" /><br/><br/><br/>
+									
+									
+									<img  src="images/order0_ans.PNG" alt="" /><br/><br/><br/>
+									
+			
+									</ul>
+							</div>
+	
+						</section>
+
+						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h2>For order = 1 </h2>
+								
+
+									
+								<ul class="actions stacked">
+									<img  src="images/order_1.PNG" alt="" />
+								>
+									<img  src="images/order1_ans.PNG" alt="" />
+									
+								
+									
+								</ul>
+							</div>
+							
+						</section>
+
+
+
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>For Order = 3</h2>
+							
+							<ul class="actions stacked">
+								<img  src="images/order3_code.PNG" alt="" /><br/><br/>
+
+								<img  src="images/order3_ans.PNG" alt="" />
+								
+							</ul>
+						</div>
+						
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>For Order = 9</h2>
+							 
+							
+							<ul class="actions stacked">
+								<img src="images/order9_code.PNG" alt="" /> <br/><br/>
+								
+								
+
+								<img  src="images/order9_ans.PNG" alt="" />
+
+								
+							</ul>
+						</div>
+
+					</section>
+
+				<!-- Five -->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>To Display all The Weights in the table</h2>
+						
+					
+						<ul class="actions stacked">
+							<img  src="images/display_weights_code.PNG" alt="" /> <br/><br/><br/>
+							
+							<img  src="images/weights_table.PNG" alt="" />
+
+							
+						</ul>
+					</div>
+
+				</section>
+					
+							
+
+				<!-- Six -->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>To Draw Train Error vs Test Error Graph</h2>
+						
+						
+
+					
+						<ul class="actions stacked">
+							<h3>First we plot train error</h3>
+							<img  src="images/train_error.PNG" alt="" /> 
+
+							<img  src="images/train_error2.PNG" alt="" /> 
+							
+							<h3>Then we Plot test error</h3> <br/><br/>
+							<img  src="images/test_error.PNG" alt="" />
+
+							<h3>Now the Train vs Test Errror plot</h3> <br/><br/>
+
+							<img  src="images/train_vs_test_error.PNG" alt="" />
+
+							<img  src="images/train_vs_test_graph.PNG" alt="" />
+						</ul>
+					</div>
+
+				</section>
+
+
+
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2> Now generate 100 more data pairs and fit it to the 9th order model and then we draw the fit</h2>
+						
+						<ul class="actions stacked">
+							<img  src="images/100_random_weights.PNG" alt="" /> <br/><br/><br/>
+
+							<h2>Now fit it to the model whose order is 9</h2>
+							
+							<img  src="images/fit_under_9thorder.PNG" alt="" /> <br/><br/><br/>
+							
+							
+
+							
+
+		
+
+							
+							
+							
+						</ul>
+					</div>
+
+				</section>
+
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Now we will regularize using the sum of weights. 
+						</h2>
+						
+						
+
+					
+						<ul class="actions stacked">
+							<img src="images/formulae.PNG" alt="" /> 
+							
+							
+							<img  src="images/regularize.PNG" alt="" />
+						
+							
+							<img  src="images/regularize_1.PNG" alt="" />
+
+							
+							<img  src="images/regularize_2.PNG" alt="" />
+
+							<img  src="images/regularise_3.PNG" alt="" />
+
+							<img  src="images/regularize_4.PNG" alt="" />
+
+							<p></p>
+						
+						
+						</ul>
+					</div>
+
+
+				</section>
+
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Now we need to plot train error vs test error according to lambda
+						</h2>
+						
+						
+
+					
+						<ul class="actions stacked">
+							<img src="images/train_vs_test_lambda.PNG" alt="" /> 
+							
+							
+							<h2>Based on the best test performance :  we found out the lambda value for the same to be :
+							</h2>
+
+							<img src="images/best_lambda.PNG" alt="" /> 
+						</ul>
+					</div>
+
+
+				</section>
+
+				
+                                  
+
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+
+                        <h2>Contributions</h2>
+
+						From the refernce I took the values were found to be hardcoded, 
+						Therefore I changed the values to be dynamic and thus the weights will now change according to the code.
+						The train Vs test error graph was not satisfying the Overfitting conditions 
+						Therefore I tried to further decrease the training error and increase the test error.
+
+						<p>
+						</p>
+
+						<h2>Challenges</h2>
+
+						The main challenge i faced was to implement the formulae to regularize weights. In the refernced code a function regularizeridge has been implemented.
+						Therefore I tried to change it according to the formula suggested by Dr.Park in the assignment 2 description. But could not succeedand ended up sticking with the original function as used in the reference. 
+
+						<p>
+						</p>
+
+						
+
+						<h2>Explanation of Overfitting</h2>
+
+					     <p>At the beggining we import the data sets of Cifar 10 through the torchvision package. If we are working on any other platform other than pytorch 
+							we can use the import torch package to run it on google colab / kaggle. 	</p>
+
+						
+
+
+							
+
+
+						<h2>References</h2>
+
+						<p>I have referrred the code from the following references. 
+							These references have given a good headstart to the assignment and helped me understand the concept better.
+						I have also tried to experimnent a few things from the referenced code which is mentioned under "contributions"</p>
+					
+						<a href="https://mintu07ruet.github.io/files/Miah%2001.html">  https://mintu07ruet.github.io/files/Miah%2001.html </a><br/>
+						<a href="https://cyanacm.wordpress.com/2020/05/23/dataminint-assignment01/2/">https://cyanacm.wordpress.com/2020/05/23/dataminint-assignment01/2/</a><br/>
+						<a href="https://www.statology.org/overfitting-machine-learning/">https://www.statology.org/overfitting-machine-learning/</a><br/><br/><br/>
+
+						
+						
+						<h2>Links</h2>
+
+						<a href="https://github.com/neelesh609/cifar10/search?l=jupyter-notebook">Jupyter-notebook for all codes.</a><br/>
+						<a href="https://neelesh609.github.io/cifar10/"> Github link for the blog post</a><br/>
+						<a href="https://neelesh609.github.io/Portfolio/"> My portolio</a><br/>
+
+						
+
+					
+						
+					</div>
+
+				</section>
+				<!-- Contact -->
+				<section id="contact" class="four" style="text-align: center;">
+					<div class="container">
+						
+						<header>
+							<h2>Contact</h2><br/>
+							
+
+						<h3></h3>
+						</header>
+						<dl class="alt">
+							<div class="container">
+
+								<p> Any Queries ? Contact me ! </p>
+								<p><strong>Email Id : </strong>Neelesh216@gmail.com</p>
+								<p><strong>Address :</strong> 404 E Border st, Arlington, Texas 76010, USA</p>
+								<p><strong>Phone :</strong> 682 375 1222</p>
+							  </div>
+
+					</div>
+				</section>
+					
+
+				<!-- Seven -->
+					
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
